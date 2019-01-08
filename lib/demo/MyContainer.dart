@@ -3,18 +3,26 @@ import 'package:flutter/material.dart';
 /**
  * 学习3：Container Widget
  */
-class MyContainer extends StatelessWidget {
+class MyContainer extends StatelessWidget{
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context ){
     return MaterialApp(
-      title: 'Yang Flutter Demo',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('This is a Flutter Demo'),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello jsPang.com'),
+      title:'Text widget',
+      home:Scaffold(
+        body:Center(
+          child:Container(
+            child:new Text('Hello JSPang',style: TextStyle(fontSize: 40.0),),
+            alignment: Alignment.topLeft,
+            width:500.0,
+            height:400.0,
+            padding:const EdgeInsets.fromLTRB(10.0,30.0,0.0,0.0),
+            margin: const EdgeInsets.all(10.0),
+            decoration:new BoxDecoration(
+                gradient:const LinearGradient(
+                    colors:[Colors.lightBlue,Colors.greenAccent,Colors.purple]
+                ),
+                border:Border.all(width:2.0,color:Colors.red)
+            ),
           ),
         ),
       ),

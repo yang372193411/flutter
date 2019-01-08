@@ -11,9 +11,9 @@ class MyImage extends StatelessWidget {
       home: Scaffold(
         body: Center(
             child: Container(
-              child: new Image.network(
-                'https://www.booktxt.net/files/article/image/8/8429/8429s.jpg',
-                fit: BoxFit.fill,
+              child:new Image.network(
+                'http://jspang.com/static/myimg/blogtouxiang.jpg',
+                repeat: ImageRepeat.repeat,
               ),
               width: 300.0,
               height: 200.0,
