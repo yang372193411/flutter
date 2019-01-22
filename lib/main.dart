@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:yang_flutter/demo/MyContainer.dart';
-import 'package:yang_flutter/demo/MyHello.dart';
-import 'package:yang_flutter/demo/MyImage.dart';
-import 'package:yang_flutter/demo/MyTextWidget.dart';
-import 'package:yang_flutter/demo/MyListView1.dart';
+
+import 'package:yang_flutter/demo/DynamicListView.dart';
 
 //ui库
-void main() => runApp(MyListView1());
+void main() => runApp(
+    DynamicListView(items: new List<String>.generate(1000, (i) => "Item $i")));
